@@ -28,5 +28,7 @@ def reset():
     except ValueError:
         msg = "Enter correct interger value"
         return render_template('angle.html', message=msg)
-    
+if __name__ == "__main__":
+    app.secret_key = os.urandom(12)
+    app.run(debug=False,host='0.0.0.0') 
  
