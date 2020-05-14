@@ -11,11 +11,11 @@ app = Flask(__name__, template_folder='flask_template')
 OUTPUT = "e"
 @app.route('/', methods=['GET'])
 def home():
-    """Go to the HTML template"""
+    """ Go to the HTML template """
     return render_template('angle.html', message=OUTPUT)
 @app.route('/user', methods=['POST'])
 def reset():
-    """Calculate the clock function"""
+    """ Calculate the clock function """
     try:
         hour = int(request.form['hour'])
         minute = int(request.form['minute'])
