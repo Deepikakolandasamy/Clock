@@ -9,7 +9,7 @@ COPY . /app
 RUN pip3 --no-cache-dir install -r req.lib.txt
 
 RUN pylint app.py
-RUN pytest unittest.py
+#RUN pytest unittest.py
 
 EXPOSE 5000
 
