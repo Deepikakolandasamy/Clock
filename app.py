@@ -19,7 +19,7 @@ def reset():
     try:
         hour = int(request.form['hour'])
         minute = int(request.form['minute'])
-        if ((hour >= 0) & (hour <= 12)) & ((minute >= 0) & (minute <= 60)):
+        if ((hour >= 1) & (hour <= 12)) & ((minute >= 0) & (minute <= 60)):
             angle = abs((hour * 30 + minute * 0.5)-(minute * 6))
             msg = "Angle between the hour and minute: "+str(angle)
         else:
