@@ -21,7 +21,9 @@ def reset():
         minute = int(request.form['minute'])
         if ((hour >= 1) & (hour <= 12)) & ((minute >= 0) & (minute <= 60)):
             angle = abs((hour * 30 + minute * 0.5)-(minute * 6))
-            msg = "Angle between the hour and minute: "+str(angle)
+            if angle > 180:
+                angle = 360 - angle
+            msg = "Angle between the %s and %s: "%(hour, minute)+str(angle)
         else:
             msg = "Enter correct interger value(Hour=1 to 12, Minute=0 to 60)"
         return render_template('angle.html', message=msg)
