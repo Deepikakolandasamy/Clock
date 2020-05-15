@@ -17,19 +17,6 @@ class Testing(unittest.TestCase):
         except ValueError:
             angle = "Enter correct interger value"
         self.assertEqual(angle, 90)
-
-    def test_2(self):
-        try:
-            hour = ""
-            minute = ""
-            if ((hour >= 1) & (hour <= 12)) & ((minute >= 0) & (minute <= 60)):
-                angle = abs((hour * 30 + minute * 0.5)-(minute * 6))
-            else:
-                angle = "Enter correct interger value"
-        except ValueError:
-            angle = "Enter correct interger value"
-        self.assertEqual(angle, "Enter correct interger value")
-
     def test_3(self):
         hour = 13
         minute = 50
