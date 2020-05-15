@@ -25,7 +25,7 @@ def reset():
                 angle = 360 - angle
             msg = "Angle between %s hours and %s minutes : "%(hour, minute)+str(angle)
         else:
-            msg = "Enter correct interger value(Hour=1 to 12, Minute=0 to 60)"
+            msg = "Enter correct integer value(Hour=1 to 12, Minute=0 to 60)"
         return render_template('angle.html', message=msg)
     except ValueError:
         msg = "Enter correct integer value(Hour=1 to 12, Minute=0 to 60)"
