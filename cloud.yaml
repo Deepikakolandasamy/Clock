@@ -15,8 +15,8 @@
    - 'gcr.io/ind-coe/github_deepikakolandasamy_clock:$COMMIT_SHA'
    - '--region'
    - 'us-central1'
+   - '--port'
+   - '5000'
    - '--platform'
    - 'managed'
    - '--allow-unauthenticated'
-   -'--port:5000'
-   
