@@ -10,7 +10,7 @@
    args:
    - 'run'
    - 'deploy'
-   - 'democlocktesting'
+   - 'clocktestingdemo'
    - '--image'
    - 'gcr.io/ind-coe/github_deepikakolandasamy_clock:$COMMIT_SHA'
    - '--region'
