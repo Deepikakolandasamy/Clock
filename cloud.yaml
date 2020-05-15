@@ -18,5 +18,5 @@
    - '--platform'
    - 'managed'
    - '--allow-unauthenticated'
-   -'--port'
+   -'--port:'
    -'5000'
