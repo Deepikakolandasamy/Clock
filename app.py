@@ -23,10 +23,10 @@ def reset():
             angle = abs((hour * 30 + minute * 0.5)-(minute * 6))
             msg = "Angle between the hour and minute: "+str(angle)
         else:
-            msg = "Enter correct interger value"
+            msg = "Enter correct interger value(Hour=1 to 12, Minute=0 to 60)"
         return render_template('angle.html', message=msg)
     except ValueError:
-        msg = "Enter correct interger value"
+        msg = "Enter correct integer value(Hour=1 to 12, Minute=0 to 60)"
         return render_template('angle.html', message=msg)
 if __name__ == "__main__":
     app.secret_key = os.urandom(12)
